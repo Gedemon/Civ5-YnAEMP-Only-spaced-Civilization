@@ -1,0 +1,11 @@
+-- Disable non-spaced Civilizations
+UPDATE Civilizations SET Playable = 0, AIPlayable = 0 WHERE
+		Type = 'CIVILIZATION_DENMARK'
+	OR	Type = 'CIVILIZATION_AUSTRIA'
+	OR	Type = 'CIVILIZATION_BYZANTIUM'
+	OR	Type = 'CIVILIZATION_CELTS'
+	OR	Type = 'CIVILIZATION_NETHERLANDS'
+	OR	Type = 'CIVILIZATION_ASSYRIA'
+	OR	Type = 'CIVILIZATION_VENICE';
+
+
